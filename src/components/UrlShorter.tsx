@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { SyntheticEvent, useState } from 'react'
 import { IUrlService } from '../service/IUrlService'
 import { url } from "../model/Url";
 import { toast } from 'react-toastify';
@@ -8,7 +8,7 @@ function UrlShorter() {
     const [text, setText] = useState<string>("");
     const [shortUrl, setShortUrl] = useState<url[]>([]);
 
-    const handleSubmit = (e: any) => {
+    const handleSubmit = (e: SyntheticEvent) => {
         e.preventDefault()
         let urlServise = new IUrlService()
         urlServise.getİnfo(text)
