@@ -1,1 +1,1 @@
-sardarli-url-shorter.netlify.app
+https://sardarli-url-shorter.netlify.app/
